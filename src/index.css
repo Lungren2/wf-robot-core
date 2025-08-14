@@ -104,9 +104,31 @@
   }
 
   /* WF Robot Custom Animations */
-  @keyframes pulseDot {
-    0%, 100% { opacity: 0.4; }
-    50% { opacity: 1; }
+  @keyframes glowRed {
+    0%, 20%, 100% { 
+      box-shadow: 0 0 5px hsl(var(--wf-red) / 0.3);
+    }
+    10% { 
+      box-shadow: 0 0 20px hsl(var(--wf-red) / 0.8), 0 0 30px hsl(var(--wf-red) / 0.6);
+    }
+  }
+
+  @keyframes glowYellow {
+    0%, 20%, 100% { 
+      box-shadow: 0 0 5px hsl(var(--wf-yellow) / 0.3);
+    }
+    10% { 
+      box-shadow: 0 0 20px hsl(var(--wf-yellow) / 0.8), 0 0 30px hsl(var(--wf-yellow) / 0.6);
+    }
+  }
+
+  @keyframes glowGreen {
+    0%, 20%, 100% { 
+      box-shadow: 0 0 5px hsl(var(--wf-green) / 0.3);
+    }
+    10% { 
+      box-shadow: 0 0 20px hsl(var(--wf-green) / 0.8), 0 0 30px hsl(var(--wf-green) / 0.6);
+    }
   }
 
   @keyframes fadeIn {
@@ -114,8 +136,16 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  .animate-pulse-dot {
-    animation: pulseDot 1.2s ease-in-out infinite;
+  .animate-glow-red {
+    animation: glowRed 3s ease-in-out infinite;
+  }
+
+  .animate-glow-yellow {
+    animation: glowYellow 3s ease-in-out infinite 1s;
+  }
+
+  .animate-glow-green {
+    animation: glowGreen 3s ease-in-out infinite 2s;
   }
 
   .animate-fade-in {

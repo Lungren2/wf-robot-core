@@ -9,10 +9,16 @@ export function RobotDot({ state, animate = true }: RobotDotProps) {
     wait: 'bg-wf-yellow', 
     stop: 'bg-wf-red'
   };
+
+  const animationMap = {
+    go: 'animate-glow-green',
+    wait: 'animate-glow-yellow', 
+    stop: 'animate-glow-red'
+  };
   
   return (
     <span 
-      className={`inline-block size-2.5 rounded-full ${colorMap[state]} ${animate ? 'animate-pulse-dot' : ''}`}
+      className={`inline-block size-2.5 rounded-full ${colorMap[state]} ${animate ? animationMap[state] : ''}`}
       aria-label={state}
     />
   );
