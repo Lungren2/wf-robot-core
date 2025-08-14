@@ -14,10 +14,10 @@
     --wf-muted: 0 0% 31%;            /* #4F4F4F muted text */
     --wf-border: 0 0% 90%;           /* Light gray separators */
 
-    /* Traffic Light Accents */
-    --wf-green: 145 63% 49%;         /* #27AE60 - Go/Success */
-    --wf-yellow: 45 87% 61%;         /* #F2C94C - Wait/Warning */
-    --wf-red: 0 79% 63%;             /* #EB5757 - Stop/Error */
+    /* Traffic Light Accents - More Saturated */
+    --wf-green: 145 85% 45%;         /* More vibrant green - Go/Success */
+    --wf-yellow: 45 100% 55%;        /* More vibrant yellow - Wait/Warning */
+    --wf-red: 0 95% 58%;             /* More vibrant red - Stop/Error */
 
     /* Utility Colors */
     --wf-ring: 160 84% 39%;          /* Focus ring */
