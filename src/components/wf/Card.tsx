@@ -15,7 +15,7 @@ export function Card({ title, children, actions, statusStripe, className = '' }:
     danger: 'before:bg-wf-red'
   };
   
-  const stripeClass = statusStripe ? `relative before:absolute before:left-0 before:top-0 before:h-full before:w-1 before:rounded-l-2xl ${stripeMap[statusStripe]}` : '';
+  const stripeClass = statusStripe ? `relative before:absolute before:left-0 before:top-0 before:h-full before:w-1 before:rounded-tl-2xl before:rounded-bl-2xl ${stripeMap[statusStripe]}` : '';
   
   return (
     <section className={`rounded-2xl bg-wf-card text-wf-card-fg shadow-card border border-wf-border animate-fade-in ${stripeClass} ${className}`}>
