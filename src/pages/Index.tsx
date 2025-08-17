@@ -244,18 +244,18 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Cards with Status Stripes */}
+        {/* Card Showcase */}
         <section>
-          <h2 className="font-display text-2xl mb-6">Cards with Status Stripes</h2>
+          <h2 className="font-display text-2xl mb-6">Card Showcase</h2>
           <div className="grid gap-6 md:grid-cols-3">
-            <Card title="Success Card" statusStripe="success">
-              <p className="text-wf-muted">This card has a green status stripe indicating success.</p>
+            <Card title="Success Card">
+              <p className="text-wf-muted">This card demonstrates the clean, modern styling without stripes.</p>
             </Card>
-            <Card title="Warning Card" statusStripe="warning">
-              <p className="text-wf-muted">This card has a yellow status stripe indicating a warning.</p>
+            <Card title="Warning Card">
+              <p className="text-wf-muted">Cards now feature subtle hover effects and consistent styling.</p>
             </Card>
-            <Card title="Danger Card" statusStripe="danger">
-              <p className="text-wf-muted">This card has a red status stripe indicating an error.</p>
+            <Card title="Danger Card">
+              <p className="text-wf-muted">All cards maintain the same elegant appearance and functionality.</p>
             </Card>
           </div>
         </section>
